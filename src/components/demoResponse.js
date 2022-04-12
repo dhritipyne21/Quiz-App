@@ -1,4 +1,4 @@
-[
+const response = [
     {
         "id": 64,
         "question": "How do you get information from a form that is submitted using the \"get\" method?",
@@ -323,3 +323,5 @@
         "difficulty": "Easy"
     }
 ]
+
+export default response;
