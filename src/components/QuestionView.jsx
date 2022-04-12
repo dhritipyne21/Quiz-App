@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+
+import ScorePage from "./ScorePage";
 
 const QuestionView = ({ question, correctAns, index, setIndex, limit }) => {
   //const givenAns = localStorage.getItem(question.id)
@@ -146,10 +147,7 @@ const QuestionView = ({ question, correctAns, index, setIndex, limit }) => {
       )}
     </>
   ) : (
-    <>
-    <h5> Your score is : {score}</h5>
-    <Link to="/hello">Go to Questions</Link>
-    </>
+    <ScorePage score = {score}/>
   );
 };
 
