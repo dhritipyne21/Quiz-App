@@ -4,6 +4,7 @@ import QuestionView from "./QuestionView";
 import response from "./demoResponse";
 import { Link, useLocation } from "react-router-dom";
 
+
 function useQuery() {
   return new URLSearchParams(useLocation().search);
 }

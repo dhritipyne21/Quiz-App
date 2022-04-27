@@ -62,7 +62,7 @@ const QuestionView = ({
       return (
         value != null && (
           <div className="form-check">
-            <input
+             <label><input
               key={key + "_" + question.id}
               type="checkbox"
               name={key + "_correct"}
@@ -70,7 +70,7 @@ const QuestionView = ({
               defaultChecked={isChecked}
               onChange={(e) => handleChange(e)}
             ></input>
-            <label>{value}</label>
+           {value}</label>
           </div>
         )
       );
@@ -91,7 +91,7 @@ const QuestionView = ({
       </ul>
 
       {questionIndex > 0 && (
-        <button
+        <button className="cta-btn"
           onClick={() => {
             prev();
           }}
@@ -100,7 +100,7 @@ const QuestionView = ({
         </button>
       )}
       {questionIndex < limit - 1 && (
-        <button
+        <button className="cta-btn"
           onClick={() => {
             next();
           }}
@@ -109,7 +109,7 @@ const QuestionView = ({
         </button>
       )}
       {questionIndex === limit - 1 && (
-        <button
+        <button className="cta-btn"
           onClick={() => {
             setScore(calculateScore());
             setQuestionIndex(questionIndex + 1);

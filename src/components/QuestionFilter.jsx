@@ -49,7 +49,7 @@ const QuestionFilter = () => {
         defaultOption=""
       />
 
-      <button
+      <button className="cta-btn"
         onClick={() =>
           navigate(
             `/questions?topic=${quizFormDetails.topic}&totalQuestions=${quizFormDetails.totalQuestions}&difficulty=${quizFormDetails.difficulty}`

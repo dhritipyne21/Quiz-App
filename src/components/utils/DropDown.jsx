@@ -9,7 +9,7 @@ const DropDown = ({
   defaultOption,
 }) => {
   return (
-    <div className="dropdown">
+    <div className="dropdown" >
       {title}
       <select
         selected={valuesArray[0]}

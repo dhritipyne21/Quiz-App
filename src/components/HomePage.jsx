@@ -4,7 +4,7 @@ import QuestionFilter from "./QuestionFilter";
 
 const HomePage = () => {
   return (
-    <div>
+    <div className="home-container">
       <QuestionFilter />
       {/* <Link to="/questions?type=foo">Foo User</Link> */}
       {/* <Link to="/questions">Go to Questions</Link> */}
